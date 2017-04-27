@@ -23,22 +23,29 @@
    //---------Navbar---------
 
    .navbar-default {    //本段更改导航条
-       background-color: #212121;
-       border-color: #212121;
-       margin-bottom: 0; //改变导航条和下边图形之间的距离
+       background-color: #212121; //背景颜色
+       border-color: #212121; //边框色
+       margin-bottom: 0; //底部 margin 不撑开距离
        border-radius: 0;  //更改数值四个角角度会有变化
    }
 
+   .navbar-brand > img {
+      display: inline-block; //图片和链接文字显示在同一行
+      margin-right: 10px; //图片和链接文字拉开一点距离
+      width: 25px; //定制图片宽度
+      height: 25px; //定制图片高度
+  }
+
    .navbar-default .navbar-brand {
-       color: #CDDC39;
+       color: #CDDC39; //字体颜色
        padding: 10px 25px; //字体距导航条下端距离&字体距左边距离
        line-height: 30px;   //字体在导航条上下位置&导航条上字体颜色及位置
    }
 
    .navbar-default .navbar-brand:hover,
    .navbar-default .navbar-brand:focus {
-       color: #f44336;
-       background-color: transparent;
+       color: #f44336;  //鼠标放置在链接上的文字颜色
+       background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
    }
 
    .navbar-default .navbar-nav > li > a {
@@ -61,8 +68,8 @@
    .navbar-default .navbar-nav > .open > a,
    .navbar-default .navbar-nav > .open > a:focus,
    .navbar-default .navbar-nav > .open > a:hover {
-       background-color: #303F9F;//蓝色 未知哪里改动
-       color: #303F9F;
+       background-color: black;//右上角登录时，底色变黑
+       color: white; //右上角字体变白色
    }
 
 //---------Box---------
@@ -122,7 +129,7 @@
   }
 
   footer .footer-below {
-      padding: 25px 0;
+      padding: 15px 0;
       background-color: #233140; //底端条纹宽度&背景颜色
   }
 
