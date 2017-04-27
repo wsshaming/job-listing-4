@@ -111,6 +111,17 @@
 
 .thumbnail {
     border: 0 none;
-    box-shadow: none;
+    box-shadow: 0 none;
     margin-top: 70px;
 } //下方图标的外边框
+
+//---------Footer---------
+
+  footer {
+      color: #CDDC39; //底端字体颜色
+  }
+
+  footer .footer-below {
+      padding: 25px 0;
+      background-color: #233140; //底端条纹宽度&背景颜色
+  }
