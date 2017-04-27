@@ -125,3 +125,18 @@
       padding: 25px 0;
       background-color: #233140; //底端条纹宽度&背景颜色
   }
+
+  .custab{
+  border: 1px solid #ccc;
+
+  padding: 5px;
+  margin: 5% 0;  // 文字框
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s; //文字间断阴影
+}
