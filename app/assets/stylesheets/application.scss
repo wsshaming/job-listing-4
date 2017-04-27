@@ -19,43 +19,98 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.jumbotron {
+
+   //---------Navbar---------
+
+   .navbar-default {    //本段更改导航条
+       background-color: #212121;
+       border-color: #212121;
+       margin-bottom: 0; //改变导航条和下边图形之间的距离
+       border-radius: 0;  //更改数值四个角角度会有变化
+   }
+
+   .navbar-default .navbar-brand {
+       color: #CDDC39;
+       padding: 10px 25px; //字体距导航条下端距离&字体距左边距离
+       line-height: 30px;   //字体在导航条上下位置&导航条上字体颜色及位置
+   }
+
+   .navbar-default .navbar-brand:hover,
+   .navbar-default .navbar-brand:focus {
+       color: #f44336;
+       background-color: transparent;
+   }
+
+   .navbar-default .navbar-nav > li > a {
+       color: #CDDC39; //右侧邮箱登陆字体颜色 绿色
+   }
+
+   .navbar-default .navbar-nav > li > a:hover,
+   .navbar-default .navbar-nav > li > a:focus {
+       color: #C2185B;  //导航条右侧字体，点击会变色 暗红色
+       background-color: transparent;
+   }
+
+   .navbar-default .navbar-nav > .active > a,
+   .navbar-default .navbar-nav > .active > a:hover,
+   .navbar-default .navbar-nav > .active > a:focus {
+       color: #303F9F;
+       background-color: #303F9F; //蓝色 未知哪里改动
+   }
+
+   .navbar-default .navbar-nav > .open > a,
+   .navbar-default .navbar-nav > .open > a:focus,
+   .navbar-default .navbar-nav > .open > a:hover {
+       background-color: #303F9F;//蓝色 未知哪里改动
+       color: #303F9F;
+   }
+
+//---------Box---------
+
+.box {
   background-image:url('http://r.photo.store.qq.com/psb?/V132ncpc31wW3V/l0CAKIfTz2tBzn62Kh6Pd4nCW18ZnUd3QrFPEh38pFs!/r/dGcBAAAAAAAA');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 110px;
+  margin-bottom: 50px; //插入的图片位置
 }
 
+  .box-inner {
+      background-color: rgba(250, 250, 250, 0.69);
+      padding-bottom: 5px;
+      margin-top: 150px;
+      margin-bottom: 150px;// 增进一个白色底框。。。
+  }
+
 .title {
-  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
   text-align: center;
-  margin-top: 200px;
   margin-bottom: 80px;
-  color: green;
+  color: green;  //绿营正中间的标题
 }
 
 .slogan {
+  color: #222;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;//字体和按钮之间的距离
   text-align: center;
+  font-size: 20px;
   color: black;
-  top: 12px;
-}
+  top: 30px;
+}  //标题下段字体的颜色
 
 .lead {
   margin-bottom: 60px;
   text-align: center;
-  color: white;
+  color: white; //按钮形状位置字体颜色
 }
 
 .caption {
-  margin: 20px;
+  margin: 15px;
   text-align: center;
-  top: 20px;
-}
+  top: 30px;
+}  //下边外边框附带的字体位置和大小
 
 .thumbnail {
     border: 0 none;
     box-shadow: none;
     margin-top: 70px;
-}
+} //下方图标的外边框

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Job Listing </title>
+    <title>绿营 </title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,14 +9,13 @@
   </head>
 
   <body>
-
+      <%= render "common/flashes" %>
+    <!-- 这下面四行导航条内容底色消失了 -->
       <div class="container-fluid">
-          <%= render "common/navbar" %>
-          <%= render "common/flashes" %>
-          <%= yield %>
-      </div>
-
+             <div class="row">
+                <%= render "common/navbar" %>
+                <%= yield %>
+             </div>
       <%= render "common/footer" %>
-
   </body>
 </html>
